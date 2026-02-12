@@ -42,14 +42,12 @@ export default {
       stock: 0,
       precio: 0,
       mensaje: "",
-      test: "",
     };
   },
   methods: {
     async crearProducto(body) {
       await crearFachada(body);
       this.mensaje = "Producto creado exitosamente";
-      this.codigoBarras = 0;
     },
   },
 };
